@@ -10,7 +10,26 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
-// array of employees something like this. call after answer all the questions
+const teamList = [];
+
+const questions = [ {
+
+    type: "input",
+    name: "name",
+    message: "Enter employee name.",
+},
+{
+    type: "input",
+    name: "id",
+    message: "Enter employee ID.",
+},
+{
+    type: "input",
+    name: "email",
+    message: "Enter employee email.",
+},
+  
+];
 
 render([{},{}]) 
 // Write code to use inquirer to gather information about the development team members,
