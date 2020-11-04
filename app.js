@@ -12,6 +12,8 @@ const render = require("./lib/htmlRenderer");
 
 const teamList = [];
 
+
+
 function createTeam() {
     inquirer
         .prompt([
@@ -42,7 +44,7 @@ function createTeam() {
                     break;
 
                 case "No more employees":
-                    render(teamMembers);
+                    render(teamList);
                     break
 
             }
@@ -74,10 +76,10 @@ function addManager() {
             console.log(userChoice);
 
     const manager = new Manager(userChoice.managerName, userChoice.managerID, userChoice.managerEmail, userChoice.managerOfficeNumber)
-    teamMembers.push(manager)
+    teamList.push(manager)
 
     createTeam();
-
+    
 })
 
 function addEngineer() {
@@ -107,7 +109,7 @@ function addEngineer() {
                 console.log(userChoice);
     const engineer = new Engineer(userChoice.engineerName, userChoice.engineerID, userChoice.engineerEmail, userChoice.gitHubUsername)
     
-    teamMembers.push(engineer)
+    teamList.push(engineer)
 
     createTeam();
 
@@ -144,11 +146,14 @@ function addIntern() {
 
         const intern = new Intern(userChoice.internName, userChoice.internID, userChoice.internEmail, userChoice.internSchool)
 
-        teamMembers.push(intern)
+        teamList.push(intern)
 
         createTeam();
     })
 }
 }
 }
+
+createTeam();
+
 module.exports = teamList
