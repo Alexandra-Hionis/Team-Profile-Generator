@@ -1,0 +1,28 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Application will build a software engineering team generator command line application. A Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "\"jest --verbose test/*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandra-Hionis/Team-Profile-Generator.git"
+  },
+  "author": "Alexandra Hionis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandra-Hionis/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Alexandra-Hionis/Team-Profile-Generator#readme"
+}
