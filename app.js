@@ -150,6 +150,7 @@ function addIntern() {
         teamList.push(intern)
 
         createTeam();
+
     })
 }
 }
