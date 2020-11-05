@@ -46,8 +46,19 @@ function createTeam() {
                 case "No more employees":
                     var htmlContent = render(teamList);
                     console.log({htmlContent});
+                    try {
+                        fs.writeFileSync(outputPath, htmlContent)
+                        //file written successfully
+                      } catch (err) {
+                        console.error(err)
+                      }
+                    // try {
+                    // fs.writeFileSync(outputPath, htmlContent);
+                    // } catch (err) {
+                    //     console.error(err);
+                    // }
                     break;
-            }
+                }
         })
 function addManager() {
     inquirer
@@ -155,7 +166,7 @@ function addIntern() {
 }
 }
 
-fs.writeFileSync(outputPath, render());
+
 
 createTeam();
 
