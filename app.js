@@ -154,17 +154,8 @@ function addIntern() {
     })
 }
 }
-// const fs = require('fs');
 
-// fs.writeFile(outputPath, teamHTML, function(err) {
-//     if(err) {
-//         return console.log(err);
-//     }
-//     console.log("Team.html file was generated!");
-// }); 
-
-// Or
-fs.writeFileSync(OUTPUT_DIR, outputPath);
+fs.writeFileSync(outputPath, render());
 
 createTeam();
 
