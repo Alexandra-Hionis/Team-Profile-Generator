@@ -81,6 +81,7 @@ function addManager() {
     createTeam();
     
 })
+}
 
 function addEngineer() {
     inquirer
@@ -150,7 +151,6 @@ function addIntern() {
 
         createTeam();
     })
-}
 }
 }
 
