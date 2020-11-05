@@ -44,8 +44,9 @@ function createTeam() {
                     break;
 
                 case "No more employees":
-                    render(teamList);
-                    break
+                    var htmlContent = render(teamList);
+                    console.log({htmlContent});
+                    break;
 
             }
         })
